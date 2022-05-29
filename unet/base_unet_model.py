@@ -23,27 +23,17 @@ class UNet(nn.Module):
         self.cls_conv = FeatureConv(64, 1)
         self.outc = OutConv(64, n_classes)
 
-    def forward(self, x, y):
+    def forward(self, x):
         x1 = self.inc(x)
-        y1 = self.inc(y)
-
         x2 = self.down1(x1)
-        y2 = self.down1(y1)
-        
         x3 = self.down2(x2)
-        y3 = self.down2(y2)
-
         x4 = self.down3(x3)
-        y4 = self.down3(y3)
-
-        x4_ = torch.cat((x4, y4), dim=3)
-        x5 = self.down4(x4_)
+        x5 = self.down4(x4)
         x = self.up1(x5, x4)
         x = self.up2(x, x3)
         x = self.up3(x, x2)
         x = self.up4(x, x1)
-        feature = self.cls_conv(x)
         logits = self.outc(x)
-        return logits, feature
+        return logits
 
 
