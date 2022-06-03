@@ -1,0 +1,12 @@
+numpy
+matplotlib
+opencv-python
+torchsummary
+#albumentations
+tqdm
+easydict 
+tensorboardX
+scikit-learn
+scikit-image
+tensorboard
+protobuf==3.19 
