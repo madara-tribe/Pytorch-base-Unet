@@ -1,5 +1,5 @@
 import torch
-from unet.custom_unet1 import UNet
+from unet.custom_unet import UNet
 from torchsummary import summary
 
 if __name__=="__main__":
