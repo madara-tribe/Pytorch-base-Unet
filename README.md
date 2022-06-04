@@ -2,7 +2,7 @@
 
 For customization, this is base Unet with Pytorch.
 
-<b>Versions</b>
+## Versions
 - Python 3.7.0
 - pytorch '1.7.1+cu101
 - torchvision 0.8.2+cu101
