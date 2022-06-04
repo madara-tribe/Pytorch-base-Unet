@@ -15,8 +15,7 @@ For customization, this is base Unet with Pytorch.
 
 ## BGR => HSV convert
 
-![result](https://user-images.githubusercontent.com/48679574/171917937-988ece0b-05a0-4f9e-a8d2-428aef5b51ba.png)
-
+![pred_rgb_2](https://user-images.githubusercontent.com/48679574/172001064-28b8b4ef-9d1a-4925-a6fb-12594356c163.png)
 
 ## loss curve
 
