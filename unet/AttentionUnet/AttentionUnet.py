@@ -3,6 +3,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 from .layers import conv2d, deconv2d, attention_block
 
+"""
+https://www.kaggle.com/code/xxc025/attention-u-net/notebook
+"""
 
 class UNet(nn.Module):    
     def __init__(self, inc, num_cls, start_fm):
