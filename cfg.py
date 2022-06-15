@@ -12,6 +12,7 @@ Cfg.lr = 0.001
 Cfg.epochs = 30
 Cfg.scale = 0.5
 Cfg.bilinear = False
+Cfg.start_fm = 32
 Cfg.val_interval = 50
 Cfg.gpu_id = '3'
 Cfg.weight_decay = 1e-4
